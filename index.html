@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Data Engineer Portoflio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">DE.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-img-container">
+                <img src="assets/images/profile-pic.jpg" alt="[Your Name]" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">[Your Name]</span>.</h1>
+            <h2 class="typing-text">Building robust data pipelines & AI solutions.</h2>
+            <p>A data engineer turning complex datasets into actionable intelligence. I specialize in scalable architecture, cloud computing, and integrating cutting-edge AI models.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="assets/images/resume.pdf" target="_blank" class="btn-secondary"><i class="fas fa-file-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content glass-card">
+            <p>I am a passionate Data Engineer with experience in designing, building, and maintaining scalable data processing systems. My expertise lies in bridging the gap between data availability and actionable insights. I am particularly enthusiastic about the intersection of big data and **Artificial Intelligence**, constantly seeking ways to leverage AI for smarter data governance and automation.</p>
+            <p>Replace this text with a summary from your resume. Focus on your problem-solving abilities and your specific interest in AI-driven data engineering.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
+        <div class="bento-grid">
+            <div class="bento-item glass-card main-skill" data-aos="zoom-in">
+                <h3><i class="fas fa-database"></i> Data Engineering Core</h3>
+                <ul class="skill-list">
+                    <li>Python / Scala</li>
+                    <li>SQL / NoSQL</li>
+                    <li>ETL/ELT Pipelines</li>
+                    <li>Data Warehousing (Snowflake, Redshift)</li>
+                </ul>
+            </div>
+            <div class="bento-item glass-card ai-skill" data-aos="zoom-in" data-aos-delay="100">
+                <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                <p>Integrating ML models into production pipelines.</p>
+                <div class="tags">
+                    <span>MLOps</span>
+                    <span>TensorFlow/PyTorch</span>
+                    <span>Vector Databases</span>
+                </div>
+            </div>
+             <div class="bento-item glass-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3><i class="fas fa-server"></i> Big Data Technologies</h3>
+                <div class="tags">
+                    <span>Apache Spark</span>
+                    <span>Kafka</span>
+                    <span>Hadoop Ecosystem</span>
+                </div>
+            </div>
+            <div class="bento-item glass-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3><i class="fab fa-aws"></i> Cloud Platforms</h3>
+                <p>AWS / Azure / GCP Certified Professional</p>
+            </div>
+             <div class="bento-item glass-card" data-aos="zoom-in" data-aos-delay="400">
+                <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                <div class="tags">
+                    <span>Docker & Kubernetes</span>
+                    <span>Airflow / Prefect</span>
+                    <span>Git & CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card glass-card" data-aos="flip-left">
+                <div class="project-content">
+                    <h3>Real-time AI Fraud Detection Pipeline</h3>
+                    <p>Built a streaming pipeline using Kafka and Spark Streaming to ingest transaction data and apply a pre-trained ML model for sub-second fraud detection.</p>
+                    <div class="tags">
+                        <span>Kafka</span><span>Spark</span><span>MLflow</span><span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="project-content">
+                    <h3>Serverless Data Lakehouse</h3>
+                    <p>Designed a cost-effective data lakehouse on AWS S3 using Glue for ETL and Athena for ad-hoc querying, reducing infrastructure costs by 40%.</p>
+                    <div class="tags">
+                        <span>AWS Glue</span><span>S3</span><span>Athena</span><span>Terraform</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+             <div class="project-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="project-content">
+                    <h3>[Your Project Title Here]</h3>
+                    <p>Describe a project from your resume. Focus on the scale of data, tools used, and the business impact or problem solved.</p>
+                    <div class="tags">
+                        <span>Tool 1</span><span>Tool 2</span><span>Tool 3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <div class="contact-container glass-card">
+            <h2>Let's Connect</h2>
+            <p>I'm currently open to new opportunities. Feel free to reach out if you'd like to collaborate or discuss data engineering.</p>
+            <a href="mailto:[your.email@example.com]" class="btn-primary large-btn"><i class="fas fa-envelope"></i> Send Me an Email</a>
+            <div class="social-links">
+                <a href="[Link to your LinkedIn]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="[Link to your GitHub]" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="[Link to your Twitter/X]" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 [Your Name]. Built with code & AI concepts.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
